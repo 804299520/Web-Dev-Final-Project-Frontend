@@ -3,11 +3,7 @@ import { Link } from 'react-router-dom';
 import '../App.css'
 
 function ViewTask() {
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [department, setDepartment] = useState('');
     const [i, setId] = useState(0);
-    const [user, setUser] = useState('');
     const [userName, setUserName] = useState('');
     const [description, setDescription] = useState('');
     const [priority, setPriority] = useState('');
@@ -22,7 +18,6 @@ function ViewTask() {
                 res.json()
                     .then((data) => {
                         setId(data.id)
-                        setUser(data.user);
                         setUserName(data.userName);
                         setDescription(data.description);
                         setPriority(data.priority);

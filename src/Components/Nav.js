@@ -1,14 +1,14 @@
 import React from 'react';
 import '../App.css'
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Logo from '../workspace-logo-2.png';
 
-function Nav(){
+function Nav() {
 
     return (
         <nav>
             <Link to='/'>
-                <img src={Logo} alt="logo" className='nav-logo'/>
+                <img src={Logo} alt="logo" className='nav-logo' />
             </Link>
             <ul className="nav-links">
 

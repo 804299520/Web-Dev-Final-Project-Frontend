@@ -12,7 +12,7 @@ import EidtTask from './Components/EditTask';
 
 
 
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -20,19 +20,19 @@ function App() {
       <div className="App">
         <Nav />
         <Routes>
-          <Route path="/" exact={true} element={<Home/>} />
+          <Route path="/" exact={true} element={<Home />} />
 
           {/* Employee Routes */}
-          <Route path="/employees" element={<Employees/>} />
-          <Route path="/employees/add" element={<AddEmployee/>} />
-          <Route path="/tasks" element={<Tasks/>} />
-          <Route path="/tasks/add" element={<AddTask/>} />
+          <Route path="/employees" element={<Employees />} />
+          <Route path="/employees/add" element={<AddEmployee />} />
+          <Route path="/tasks" element={<Tasks />} />
+          <Route path="/tasks/add" element={<AddTask />} />
 
-          <Route path="/employees/view/:id" element={<ViewEmployee/>} />
-          <Route path="/tasks/view/:id" element={<ViewTask/>} />"
+          <Route path="/employees/view/:id" element={<ViewEmployee />} />
+          <Route path="/tasks/view/:id" element={<ViewTask />} />"
 
-          <Route path="/employees/edit/:id" element={<EditEmployee/>} />
-          <Route path="/tasks/edit/:id" element={<EidtTask/>} />"
+          <Route path="/employees/edit/:id" element={<EditEmployee />} />
+          <Route path="/tasks/edit/:id" element={<EidtTask />} />"
 
         </Routes>
       </div>
