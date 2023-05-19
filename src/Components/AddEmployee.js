@@ -1,20 +1,24 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { redirect, useNavigate } from 'react-router-dom';
 import '../App.css';
 
-import list1 from './Server';
-
 function AddEmployee() {
-
-    function addEmployee(firstName, lastName, department) {
-        list1.addEmployee(firstName, lastName, department);
-    }
-
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [department, setDepartment] = useState('');
     const navigate = useNavigate();
 
+    async function addEmployee() {
+        let url = "http://localhost:8080/employees/add";
+        const response = await fetch(url,{
+            method: "PUT",
+            headers:{
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({firstName, lastName, department}),
+        });
+        return response.json();
+    }
 
     const saveEmployee = (e) => {
         if (firstName.length === 0 || lastName.length === 0 || department.length === 0) {
@@ -22,11 +26,7 @@ function AddEmployee() {
         }
         else {
             e.preventDefault();
-            addEmployee(firstName,lastName,department);
-            const employee = { firstName, lastName, department };
-            console.log(employee);
-
-            // Goes back to employee table when the form is submitted
+            addEmployee();
             navigate('/employees');
         }
     }

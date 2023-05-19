@@ -4,9 +4,14 @@ import Nav from './Components/Nav';
 import Employees from './Components/Employees';
 import AddEmployee from './Components/AddEmployee';
 import ViewEmployee from './Components/ViewEmployee';
-import ViewTask from './Components/ViewTask';
+import EditEmployee from './Components/EditEmployee';
 import Tasks from './Components/Tasks';
 import AddTask from './Components/AddTask';
+import ViewTask from './Components/ViewTask';
+import EidtTask from './Components/EditTask';
+
+
+
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -19,13 +24,16 @@ function App() {
 
           {/* Employee Routes */}
           <Route path="/employees" element={<Employees/>} />
-          <Route path="/add-employee" element={<AddEmployee/>} />
+          <Route path="/employees/add" element={<AddEmployee/>} />
           <Route path="/tasks" element={<Tasks/>} />
-          <Route path="/add-task" element={<AddTask/>} />
+          <Route path="/tasks/add" element={<AddTask/>} />
 
-          {/* These routes will be changed later, just used to test */}
-          <Route path="/employees/view-employee" element={<ViewEmployee/>} />
-          <Route path="/tasks/view-task" element={<ViewTask/>} />"
+          <Route path="/employees/view/:id" element={<ViewEmployee/>} />
+          <Route path="/tasks/view/:id" element={<ViewTask/>} />"
+
+          <Route path="/employees/edit/:id" element={<EditEmployee/>} />
+          <Route path="/tasks/edit/:id" element={<EidtTask/>} />"
+
         </Routes>
       </div>
     </Router>
