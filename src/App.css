@@ -5,7 +5,7 @@
 }
 
 /* Nav.js */
-nav{
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -14,7 +14,7 @@ nav{
   margin-bottom: 50px;
 }
 
-.nav-links{
+.nav-links {
   width: 50%;
   display: flex;
   justify-content: space-around;
@@ -22,32 +22,32 @@ nav{
   list-style: none;
 }
 
-.nav-logo{
+.nav-logo {
   min-height: 3vh;
   height: 3vh;
   width: auto;
   display: block;
 }
 
-.nav-link{
+.nav-link {
   color: #2B2424;
   text-decoration: none;
   transition: 0.1s;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: #bf63e1;
 }
 
 
 
 /* Home.js */
-.Home-Div{
+.Home-Div {
   margin-top: 200px;
   display: inline-block;
 }
 
-.title-logo{
+.title-logo {
   min-height: 10vh;
   max-height: 20vh;
   width: auto;
@@ -56,7 +56,7 @@ nav{
 
 
 /* Employee.js / Tas */
-.add-btn{
+.add-btn {
   padding: 16px 33px 16px 33px;
   border-radius: 10px;
   border-style: none;
@@ -67,12 +67,12 @@ nav{
   margin-top: 40px;
 }
 
-.add-btn:hover{
+.add-btn:hover {
   background-color: #d387ef;
   cursor: pointer;
 }
 
-table{
+table {
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -80,37 +80,38 @@ table{
   border-collapse: collapse;
 }
 
-td{
+td {
   padding: 8px 10px 8px 10px;
   color: #2B2424;
   font-weight: 500;
 }
 
-thead{
+thead {
   color: #7b7a7a;
 }
 
-th{
+th {
   font-weight: 300;
   padding: 8px 10px 8px 10px;
 }
 
-tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
 
-.task-table td{
+.task-table td {
   padding: 15px 12px 15px 12px;
 }
 
-.task-table{
+.task-table {
   width: 70%;
 }
 
 /* Action Buttons */
 .view-btn,
 .delete-btn,
-.edit-btn
-{
+.edit-btn {
   padding: 3px 8px 3px 8px;
   font-weight: 500;
   margin: 5px;
@@ -119,39 +120,39 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   border-width: 1.5px;
   transition: 0.1s;
   font-size: 16px;
-  background : none;
+  background: none;
 }
 
-.edit-btn{
+.edit-btn {
   border-color: #3f9ab8;
   color: #3f9ab8;
 }
 
-.view-btn{
+.view-btn {
   border-color: #bf63e1;
   color: #bf63e1;
 }
 
-.delete-btn{
+.delete-btn {
   border-color: #FF5C5C;
   color: #FF5C5C;
 }
 
-.edit-btn:hover{
+.edit-btn:hover {
   cursor: pointer;
   border: none;
   color: #ededed;
   background-color: #3f9ab8;
 }
 
-.view-btn:hover{
+.view-btn:hover {
   cursor: pointer;
   border: none;
   color: #ededed;
   background-color: #bf63e1;
 }
 
-.delete-btn:hover{
+.delete-btn:hover {
   cursor: pointer;
   border: none;
   color: #ededed;
@@ -162,7 +163,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
 
 /* AddEmployee.js */
-.card-body{
+.card-body {
   /* border: solid;
   border-color: #cac7c7; */
   margin-top: 50px;
@@ -173,19 +174,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   justify-content: center;
 }
 
-.form-group{
+.form-group {
   margin: 20px 0px 30px 0px;
   font-size: 15px;
-  color:#2B2424;
+  color: #2B2424;
   font-size: 20px;
 }
 
-.form-label{ 
+.form-label {
   font-weight: 800;
   margin-right: 16px;
 }
 
-.form-control{
+.form-control {
   font-size: 18px;
   font-weight: 200;
   border-radius: 10px;
@@ -194,7 +195,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   padding: 4px 2px 4px 2px;
 }
 
-.submit-form-btn{
+.submit-form-btn {
   padding: 11px 25px 11px 25px;
   border-radius: 10px;
   border-style: none;
@@ -204,34 +205,42 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   transition: 0.2s;
   margin-right: 20px;
 }
-.submit-form-btn:hover{
+
+.submit-form-btn:hover {
   cursor: pointer;
   background-color: #d387ef;
 }
 
 /* AddTask.js */
-.option-control{
+.assign-to-control {
+  height: 4vh;
+  width: auto;
+  font-size: 18px;
+}
+
+.option-control {
   height: 4vh;
   width: 7rem;
   font-size: 18px;
 }
 
-.checkbox-control{
+.checkbox-control {
   transform: scale(1.3);
 }
 
 
 /* ViewEmployee.js */
-.single-employee-title{
+.single-employee-title {
   margin-bottom: 0px;
 }
-.single-employee-department{
+
+.single-employee-department {
   font-weight: 300;
   margin-top: 1vh;
   font-size: 18px;
 }
 
-.back-btn{
+.back-btn {
   margin-top: 40px;
   padding: 11px 25px 11px 25px;
   font-weight: 500;
@@ -245,7 +254,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   border: none;
 }
 
-.back-btn:hover{
+.error-message {
+  color: #f63f3f;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.back-btn:hover {
   cursor: pointer;
   background-color: #f47070;
 }

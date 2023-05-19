@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { redirect, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../App.css';
 
 function AddEmployee() {
@@ -10,12 +10,12 @@ function AddEmployee() {
 
     async function addEmployee() {
         let url = "http://localhost:8080/employees/add";
-        const response = await fetch(url,{
+        const response = await fetch(url, {
             method: "PUT",
-            headers:{
+            headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({firstName, lastName, department}),
+            body: JSON.stringify({ firstName, lastName, department }),
         });
         return response.json();
     }
