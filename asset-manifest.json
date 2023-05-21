@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.4097c20e.css",
-    "main.js": "/static/js/main.ff03ed5f.js",
+    "main.js": "/static/js/main.a53ad78f.js",
     "static/js/787.260678e5.chunk.js": "/static/js/787.260678e5.chunk.js",
     "static/media/workspace-logo.png": "/static/media/workspace-logo.c85635a1a9630bfbdd10.png",
     "static/media/workspace-logo-2.png": "/static/media/workspace-logo-2.61557af53fd0e5c6949f.png",
     "index.html": "/index.html",
     "main.4097c20e.css.map": "/static/css/main.4097c20e.css.map",
-    "main.ff03ed5f.js.map": "/static/js/main.ff03ed5f.js.map",
+    "main.a53ad78f.js.map": "/static/js/main.a53ad78f.js.map",
     "787.260678e5.chunk.js.map": "/static/js/787.260678e5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4097c20e.css",
-    "static/js/main.ff03ed5f.js"
+    "static/js/main.a53ad78f.js"
   ]
 }
