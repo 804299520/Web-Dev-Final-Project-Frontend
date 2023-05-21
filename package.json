@@ -1,5 +1,6 @@
 {
   "name": "workspace-frontend",
+  "homepage": "https://dimitrigol.github.io/",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:8080",
