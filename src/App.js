@@ -12,7 +12,7 @@ import EidtTask from './Components/EditTask';
 
 
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
